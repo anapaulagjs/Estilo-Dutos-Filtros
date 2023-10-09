@@ -1,0 +1,47 @@
+import java.util.Scanner;
+
+public class FiltroAssembler {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+    
+        System.out.println("Escolha o formato de saída:");
+        System.out.println("1 - Decimal");
+        System.out.println("2 - Hexadecimal");
+        System.out.println("3 - Binário");
+
+        int escolha = scanner.nextInt();
+        scanner.nextLine(); 
+
+        switch (escolha) {
+            case 1:
+                formatarEmDecimal();
+                break;
+            case 2:
+                formatarEmHexadecimal();
+                break;
+            case 3:
+                formatarEmBinario();
+                break;
+            default:
+                System.out.println("Escolha inválida.");
+        }
+
+        scanner.close();
+    }
+
+    private static void formatarEmDecimal() {
+       
+        System.out.println("Formatando em decimal...");
+    }
+
+    private static void formatarEmHexadecimal() {
+    
+        System.out.println("Formatando em hexadecimal...");
+    }
+
+    private static void formatarEmBinario() {
+     
+        System.out.println("Formatando em binário...");
+    }
+}
